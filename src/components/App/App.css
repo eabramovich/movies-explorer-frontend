@@ -6,3 +6,21 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.section-title {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 23px;
+    border-bottom: 1px solid black;
+    letter-spacing: -0.9px;
+    line-height: 1.2;
+}
+
+.section-caption {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: -2px;
+    margin: 0;
+}

@@ -1,14 +1,5 @@
 .about-project {
-    padding: 110px 70px;
-}
-
-.about-project__title {
-    font-size: 22px;
-    font-weight: 400;
-    margin: 0;
-    padding-bottom: 23px;
-    border-bottom: 1px solid black;
-    letter-spacing: -0.9px;
+    padding: 111px 70px;
 }
 
 .about-project__description {
@@ -23,7 +14,7 @@
     color: #000000;
     font-size: 20px;
     font-weight: 400;
-    margin: 69px 0px 28px;
+    margin: 71px 0px 28px;
     letter-spacing: -0.9px;
 }
 
@@ -36,7 +27,7 @@
 .about-project__timeline {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin-top: 98px;
+    margin-top: 95px;
 }
 
 .about-project__stage {
@@ -44,9 +35,12 @@
 }
 
 .about-project__stage-duration {
-    text-align: center;
-    padding: 7px 0;
+    font-size: 14px;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
 }
 
 .about-project__stage-duration_type_backend {
@@ -61,7 +55,7 @@
     text-align: center;
     font-size: 14px;
     font-weight: 400;
-    padding: 17px 0;
+    padding: 16px 0 0;
     margin: 0;
     color: #A0A0A0;
 }
