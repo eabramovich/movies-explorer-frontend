@@ -13,4 +13,13 @@
     font-size: 13px;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
+}
+
+.navigation__menu-link_active { 
+    font-weight: 500;
+}
+
+.navigation__menu-link_theme_light {
+    color: #000;
 }

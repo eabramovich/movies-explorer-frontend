@@ -1,26 +1,23 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import "../App/App.css";
 import Header from '../Header/Header';
-import Promo from "../Promo/Promo";
-import AboutProject from '../AboutProject/AboutProject';
-import Technology from '../Technology/Technology';
-import AboutMe from '../AboutMe/AboutMe';
-import Portfolio from '../Portfolio/Portfolio';
+import Main from '../Main/Main';
+import Movies from '../Movies/Movies';
 import Footer from '../Footer/Footer';
 
 function App() {
+  const [ isLoggedIn, setIsLoggedIn ] = React.useState(true);
+
   return (
-    <div className="App">
-     <div className="page">
-      <Header />
-      <Promo />
-      <AboutProject />
-      <Technology />
-      <AboutMe />
-      <Portfolio />
+    <>
+      <Header isLoggedIn={isLoggedIn}/>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/movies" element={<Movies />} />
+      </Routes>
       <Footer />
-     </div>
-    </div>
+    </>
   );
 }
 

@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer section">
       <h6 className="footer__title">
         Учебный проект Яндекс.Практикум х BeatFilm.
       </h6>
