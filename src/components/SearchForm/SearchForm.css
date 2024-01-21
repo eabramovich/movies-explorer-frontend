@@ -1,13 +1,18 @@
+.search-form {
+    padding-top: 67px;
+    padding-bottom: 48px;
+}
+
 .search-form__form {
-    padding-top: 70px;
     position: relative;
+    border-bottom: 1px solid #E8E8E8;
 }
 
 .search-form__input {
     width: 100%;
     border: none;
-    height: 48px;
-    border-bottom: 1px solid #E8E8E8;
+    padding: 0;
+    height: 49px;
 }
 
 .search-form__input:focus {
@@ -30,6 +35,11 @@
     border: none;
     width: 59px;
     height: 34px;
-    top: 70px;
     right: 0;
+    top: 2px
+}
+
+.search-form__submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }

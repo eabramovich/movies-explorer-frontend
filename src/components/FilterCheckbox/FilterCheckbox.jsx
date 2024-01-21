@@ -19,9 +19,9 @@ function FilterCheckbox() {
   <div className="movies-filter"> 
     <label className="movies-filter__switch">
         <input type="checkbox" className="movies-filter__checkbox"/>
-        <span class="movies-filter__slider"></span>
+        <span className="movies-filter__slider"></span>
     </label>
-    <span class="movies-filter__label">Короткометражки:</span>
+    <span className="movies-filter__label">Короткометражки:</span>
 </div>
   );
 }

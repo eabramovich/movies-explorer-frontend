@@ -7,13 +7,11 @@ import NavigationMenu from "../NavigationMenu/NavigationMenu";
 
 function Header({ isLoggedIn }) {
   const location = useLocation();
-  const { hash, pathname, search } = location;
-
-  console.log(location);
+  
   return (
     <header
       className={`section header ${
-        (isLoggedIn && pathname !== '/') ? "header_theme_light" : "header_theme_dark"
+        (isLoggedIn && location.pathname !== '/') ? "header_theme_light" : "header_theme_dark"
       }`}
     >
       <Logo />
