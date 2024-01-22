@@ -54,3 +54,17 @@ html, .page, .page-wrapper {
 .welcome-title_location_profile  {
     text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+    .section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .section-caption {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -1.6px;
+    }
+}

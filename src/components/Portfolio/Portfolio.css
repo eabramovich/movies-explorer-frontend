@@ -43,3 +43,21 @@
 .portfolio__projects:last-child {
     border-bottom: none;
 }
+
+.portfolio__project-link:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio {
+        padding-top: 91px;
+        padding-bottom: 89px;
+    }
+
+    .portfolio__project-link {
+        font-size: 28px;
+        line-height: 1.78;
+        letter-spacing: -1.28px;
+    }
+}

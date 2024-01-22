@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Promo.css";
 import promoLogo from '../../images/text__COLOR_landing-logo.svg';
 
@@ -6,9 +7,9 @@ function Promo() {
     return (
         <section className="section promo">
             <div className="promo__information">
-                <h1 className="promo__title">Учебный проект студента факультета<br /> Веб-разработки.</h1>
-                <p className="promo__subtitle">Листайте ниже чтобы узнать больше про этот проект и его создателя</p>
-                <a className="promo__button" href="#">Узнать больше</a>
+                <h1 className="promo__title">Учебный проект студента факультета Веб-разработки.</h1>
+                <p className="promo__subtitle">Листайте ниже, чтобы узнать больше про этот проект и его создателя</p>
+                <a href="/#about-project" className="promo__button">Узнать больше</a>
             </div>
             <img className="promo__logo" src={promoLogo} alt="Логотип промо блока" />
             

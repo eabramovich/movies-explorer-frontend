@@ -26,8 +26,13 @@
 }
 
 .auth-content__login-link {
-    font-size: 14;
+    font-size: 14px;
     font-weight: 400;
     color: #3456F3;
     text-decoration: none;
+}
+
+.auth-content__login-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }

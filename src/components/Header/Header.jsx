@@ -10,7 +10,7 @@ function Header({ isLoggedIn }) {
 
   return (
     <header
-      className={`section header ${
+      className={`header ${
         (isLoggedIn && location.pathname !== '/') ? "header_theme_light" : "header_theme_dark"
       }`}
     >
@@ -19,10 +19,10 @@ function Header({ isLoggedIn }) {
       {isLoggedIn && <AccountMenu isLoggedIn={isLoggedIn} />}
       {!isLoggedIn && <ul className="header__auth-menu">
         <li className="header__auth-menu-item">
-            <Link to="/register" className="header__auth-menu-link">Регистрация</Link>
+            <Link to="/signup" className="header__auth-menu-link">Регистрация</Link>
           </li>
           <li className="header__auth-menu-item">
-            <Link className="header__auth-menu-link header__login-link">Войти</Link>
+            <Link to="/signin" className="header__auth-menu-link header__login-link">Войти</Link>
           </li>
       </ul>}
     </header>

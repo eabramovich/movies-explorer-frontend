@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+    height: 380px;
+    justify-content: space-between;
 }
 
 .auth-form__input {
@@ -28,6 +30,11 @@
 .auth-form__input:focus {
     border-bottom: 1px solid #3456F3;
     font-weight: 500;
+}
+
+.auth-form__labels-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .auth-form__label {
@@ -61,4 +68,13 @@
     height: 45px;
     border: none;
     margin-top: 125px;
+}
+
+.auth-form__button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.auth-form__button_type_login {
+
 }

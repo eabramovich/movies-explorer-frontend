@@ -61,3 +61,30 @@
     color: #A0A0A0;
 }
 
+@media screen and (max-width: 1024px) {
+    .about-project {
+        padding-top: 92px;
+        padding-bottom: 89px;
+    }
+
+    .about-project__description {
+        gap: 38px;
+    }
+
+    .about-project__detail-title {
+        margin: 71px 0px 23px;
+    }
+
+    .about-project__detail-description {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .about-project__timeline {
+        margin-top: 81px;
+    }
+}
+
+
+

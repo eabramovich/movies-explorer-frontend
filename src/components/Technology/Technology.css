@@ -50,3 +50,31 @@
     font-weight: 400;
     letter-spacing: -0.56px;
 }
+
+@media screen and (max-width: 1024px) {
+    .technology {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .technology__content {
+        padding-top: 80px;
+    }
+
+    .technology__description {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -0.48px;
+        margin: 24px 0 81px;
+    }
+
+    .technology__name {
+        width: 84px;
+        height: 57px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -0.48px;
+    }
+}

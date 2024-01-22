@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./AboutMe.css";
 import studentPhoto from "./../../images/student_photo.png";
 
@@ -13,24 +14,31 @@ function AboutMe() {
             <p className="about-me__subtitle">Фронтенд-разработчик, 33 года</p>
             <p className="about-me__description">
               <p className="about-me__description-item">
-                Я родилась в Новочеркасске, там же закончила Южно-Российский
-                государственный политехнический университет (НПИ) по
-                специальности АСOиУ(Автоматические системы обработки информации
-                и управления). Сейчас живу в Санкт-Петербурге.
+                Я родилась в городе Новочеркасск. Там же я успешно завершила
+                обучение в Южно-Российском государственном политехническом
+                университете (НПИ) по специальности "Автоматические системы
+                обработки информации и управления" (АСOиУ). В настоящее время я
+                проживаю в Санкт-Петербурге.
               </p>
               <p className="about-me__description-item">
                 В IT работаю с 2013 года с перерывом на декрет. Последние 4 года
                 работаю в консалтинговой компании и занимаюсь поддержкой и
                 внедрением SAP.
               </p>
-              <p className="about-me__description-item">
+              {/* <p className="about-me__description-item">
                 В свободное время занимаюсь йогой и хожу на различные групповые
                 занятия в фитнес студию. Люблю слушать подкасты по психологии и
                 нейропсихологии.
-              </p>
+              </p> */}
             </p>
           </div>
-          <a className="about-me__repository-link">Github</a>
+          <Link
+            to="https://github.com/eabramovich"
+            className="about-me__repository-link"
+            target="_blank"
+          >
+            Github
+          </Link>
         </div>
 
         <img

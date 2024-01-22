@@ -1,6 +1,8 @@
 .footer {
     padding-top: 63px;
     padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 .footer__title {
     margin: 0;
@@ -37,4 +39,16 @@
     font-size: 13px;
     font-weight: 400;
     color: #000;
+}
+
+.footer__nav-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
