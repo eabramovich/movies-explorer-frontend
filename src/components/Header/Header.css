@@ -20,6 +20,7 @@
     color: #FFFFFF;
     font-size: 12px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .header_theme_light {
@@ -35,4 +36,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header__auth-menu-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }

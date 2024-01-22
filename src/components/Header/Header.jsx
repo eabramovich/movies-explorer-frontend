@@ -1,5 +1,5 @@
 import { React } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link} from "react-router-dom";
 import "./Header.css";
 import Logo from "../Logo/Logo";
 import AccountMenu from "../AccountMenu/AccountMenu";
@@ -7,7 +7,7 @@ import NavigationMenu from "../NavigationMenu/NavigationMenu";
 
 function Header({ isLoggedIn }) {
   const location = useLocation();
-  
+
   return (
     <header
       className={`section header ${
@@ -18,8 +18,12 @@ function Header({ isLoggedIn }) {
       {isLoggedIn && <NavigationMenu isLoggedIn={isLoggedIn} />}
       {isLoggedIn && <AccountMenu isLoggedIn={isLoggedIn} />}
       {!isLoggedIn && <ul className="header__auth-menu">
-        <li className="header__auth-menu-link">Регистрация</li>
-        <li className="header__auth-menu-link header__login-link">Войти</li>
+        <li className="header__auth-menu-item">
+            <Link to="/register" className="header__auth-menu-link">Регистрация</Link>
+          </li>
+          <li className="header__auth-menu-item">
+            <Link className="header__auth-menu-link header__login-link">Войти</Link>
+          </li>
       </ul>}
     </header>
   );
