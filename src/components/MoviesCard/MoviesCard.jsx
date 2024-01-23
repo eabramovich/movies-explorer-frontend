@@ -8,7 +8,10 @@ function MoviesCard({ card }) {
 
   return (
     <li className="movies-card">
-      <img className="movies-card__image" src={image} alt={nameRU} />
+      <div className="movies-card__image-wrapper">
+        <img className="movies-card__image" src={image} alt={nameRU} />
+      </div>
+
       <div className="movies-card__info">
         <div className="movies-card__field-container">
           <h2 className="movies-card__name">{nameRU}</h2>
@@ -22,10 +25,10 @@ function MoviesCard({ card }) {
                 ? "movies-card__button_type_saved"
                 : ""
             } ${
-                location.pathname === "/movies" && !isSaved
-                  ? "movies-card__button_type_unsaved"
-                  : ""
-              }`}
+              location.pathname === "/movies" && !isSaved
+                ? "movies-card__button_type_unsaved"
+                : ""
+            }`}
             type="button"
             aria-label="Сохранить"
           ></button>

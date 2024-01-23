@@ -43,3 +43,12 @@
     opacity: 0.8;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1024px) {
+    .search-form {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 78px;
+        padding-bottom: 59px;
+    }
+}

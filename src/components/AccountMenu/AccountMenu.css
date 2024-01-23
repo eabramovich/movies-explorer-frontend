@@ -38,3 +38,10 @@
 .account-menu__icon {
     object-fit: none;
 }
+
+@media screen and (max-width: 768px) {
+    .account-menu {
+        margin-bottom: 90px;
+    }
+    
+}

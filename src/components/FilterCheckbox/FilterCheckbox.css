@@ -114,3 +114,12 @@
     font-weight: 500;
     line-height: 1.38;
 }
+
+@media screen and (max-width: 1024px) {
+    .movies-filter {
+        flex-flow: row-reverse;
+        padding-top: 31px;
+        gap: 14px;
+
+    }
+}

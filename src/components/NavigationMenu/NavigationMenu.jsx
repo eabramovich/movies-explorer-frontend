@@ -8,6 +8,12 @@ function NavigationMenu({ isLoggedIn }) {
 
   const menuItems = [
     {
+      id: 0,
+      name: "Главная",
+      link: "/",
+    },
+    {
+      
       id: 1,
       name: "Фильмы",
       link: "/movies",

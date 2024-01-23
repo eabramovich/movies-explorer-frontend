@@ -6,6 +6,7 @@
     padding-top: 66px;
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .about-me__text-wrapper {
@@ -59,6 +60,10 @@
         padding-top: 91px;
     }
 
+    .about-me__content {
+        gap: 50px;
+    }
+
     .about-me__subtitle {
         font-size: 12px;
         line-height: 1.5;
@@ -67,7 +72,6 @@
     
     .about-me__description {
         margin-top: 19px;
-        max-width: 364px;
     }
 
     .about-me__description-item {
