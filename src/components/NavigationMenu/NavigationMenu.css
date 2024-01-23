@@ -42,12 +42,9 @@
     .navigation__menu-link {
         font-size: 18px;
         font-weight: 500;
+        margin-bottom: 9px;
     }
 
-    .navigation__menu-link {
-        margin-bottom: 28px;
-    }
-    
     .navigation__menu-link_active {
         border-bottom: 2px solid;
         padding-bottom: 4px;

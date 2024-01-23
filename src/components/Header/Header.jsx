@@ -1,4 +1,4 @@
-import { React } from "react";
+import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import "./Header.css";
 import Logo from "../Logo/Logo";
@@ -7,6 +7,8 @@ import NavigationMenu from "../NavigationMenu/NavigationMenu";
 
 function Header({ isLoggedIn }) {
   const location = useLocation();
+
+  const [isBurgerMenuActive, setIsBurgerMenuActive] = React.useState(false);
 
   return (
     <header
@@ -17,12 +19,34 @@ function Header({ isLoggedIn }) {
       }`}
     >
       <Logo />
-      {isLoggedIn && (
-        <div className="header__menu-wrapper">
+      {/* {isLoggedIn && (
+        <div className={`header__menu-wrapper ${isBurgerMenuActive ? "header__menu-wrapper_burger-active" : ""}`}>
           {isLoggedIn && <NavigationMenu isLoggedIn={isLoggedIn} />}
           {isLoggedIn && <AccountMenu isLoggedIn={isLoggedIn} />}
-          <div className={`burger-menu burger-menu_state_open ${location.pathname !== "/" ? "burger-menu_theme_light" : "" }`}><span></span></div>
+          <div className={`burger-menu ${isBurgerMenuActive ? "burger-menu_active" : ""} ${location.pathname !== "/" ? "burger-menu_theme_light" : "" }`} onClick={() => setIsBurgerMenuActive(!isBurgerMenuActive)}><span></span></div>
         </div>
+      )} */}
+      {isLoggedIn && (
+        <>
+          <div
+            className={`header__menu-wrapper ${
+              isBurgerMenuActive ? "header__menu-wrapper_burger-active" : ""
+            }`}
+          >
+            <div className="header__menu-content">
+              {isLoggedIn && <NavigationMenu isLoggedIn={isLoggedIn} />}
+              {isLoggedIn && <AccountMenu isLoggedIn={isLoggedIn} />}
+            </div>
+          </div>
+          <div
+            className={`burger-menu ${
+              isBurgerMenuActive ? "burger-menu_active" : ""
+            } ${location.pathname !== "/" ? "burger-menu_theme_light" : ""}`}
+            onClick={() => setIsBurgerMenuActive(!isBurgerMenuActive)}
+          >
+            <span></span>
+          </div>
+        </>
       )}
       {/* <div className="header__menu-wrapper">
         {isLoggedIn && <NavigationMenu isLoggedIn={isLoggedIn} />}

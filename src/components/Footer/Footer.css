@@ -52,3 +52,35 @@
         padding-right: 30px;
     }
 }
+
+@media screen and (max-width: 475px) {
+    .footer {
+        padding: 61px 10px 20px;
+    }
+
+    .footer__title {
+        font-size: 12px;
+    }
+
+    .footer__content {
+        flex-flow: column-reverse;
+    }
+
+    .footer__nav {
+        flex-flow: column;
+        align-items: center;
+        margin-top: 8px;
+        gap: 9px 
+    }
+
+    .footer__copyright {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 29px;
+    }
+
+    .footer__nav-link {
+        font-size: 12px;
+    }
+}
+

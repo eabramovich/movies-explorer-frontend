@@ -89,6 +89,30 @@
         grid-template-columns: repeat(auto-fill, minmax(84px, 84px));
         justify-content: center;
         width: 100%;
-        
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .technology {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .technology__content {
+        padding-top: 64px;
+    }
+
+    .technology__description {
+        font-size: 11px;
+        line-height: 1.45;
+        letter-spacing: -0.44px;
+        margin: 28px 0 51px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .technology__items {
+        max-width: 178px;
     }
 }

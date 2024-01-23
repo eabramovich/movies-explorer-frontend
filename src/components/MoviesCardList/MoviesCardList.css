@@ -22,3 +22,10 @@
         row-gap: 30px;
     }
 }
+
+@media screen and (max-width: 475px) {
+    .movies-card-list {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

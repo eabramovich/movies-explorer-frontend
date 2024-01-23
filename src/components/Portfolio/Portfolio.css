@@ -61,3 +61,28 @@
         letter-spacing: -1.28px;
     }
 }
+
+@media screen and (max-width: 475px) {
+    .portfolio {
+        padding-top: 0px;
+        padding-bottom: 70px;
+    }
+    
+    .portfolio__project-link {
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: -0.72px;
+        background: url("../../images/small_arrow.svg");
+        background-repeat: no-repeat;
+        background-position: top 4px right 0px;
+    }
+
+    .portfolio__title {
+        font-size: 14px;
+        line-height: 1.428;
+    }
+
+    .portfolio__projects {
+        margin: 40px 0 0;
+    }
+}

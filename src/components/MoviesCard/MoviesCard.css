@@ -76,3 +76,17 @@
     display: block;
     padding-top: 6px;
 }
+
+@media screen and (max-width: 475px) {
+    .movies-card__name {
+        font-size: 12px;
+    }
+
+    .movies-card__duration {
+        font-size: 10px;
+    }
+
+    .movies-card-list__container {
+        row-gap: 34px;
+    }
+}

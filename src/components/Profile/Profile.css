@@ -64,3 +64,9 @@
 .profile__logout:hover {
     opacity: 0.8;
 }
+
+@media screen and (max-width: 475px) {
+    .profile {
+        width: 260px;
+    }
+}

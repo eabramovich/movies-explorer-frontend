@@ -123,3 +123,15 @@
 
     }
 }
+
+@media screen and (max-width: 475px) {
+    .movies-filter {
+        justify-content: center;
+        padding-top: 42px;
+        gap: 10px 
+    }
+
+    .movies-filter__label {
+        font-size: 11px;
+    }
+}

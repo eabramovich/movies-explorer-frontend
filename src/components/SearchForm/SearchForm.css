@@ -52,3 +52,20 @@
         padding-bottom: 59px;
     }
 }
+
+@media screen and (max-width: 475px) {
+    .search-form {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 77px;
+        padding-bottom: 22px;   
+    }
+
+    .search-form__input::placeholder {
+        font-size: 18px;
+    }
+
+    .search-form__submit {
+        top: 6px;
+    }
+}

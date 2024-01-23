@@ -68,3 +68,21 @@ html, .page, .page-wrapper {
         letter-spacing: -1.6px;
     }
 }
+
+@media screen and (max-width: 475px) {
+    .section-title {
+        font-size: 18px;
+        letter-spacing: -0.72px;
+        padding-bottom: 28px;
+    }
+
+    .section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .section-caption {
+        font-size: 30px;
+        letter-spacing: -1.2px;
+    }
+}
