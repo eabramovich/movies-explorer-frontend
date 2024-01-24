@@ -151,7 +151,7 @@
         background-color: rgba(7, 48, 66, 0.3);
         display: flex;
         justify-content: flex-end;
-        z-index: 2;
+        z-index: 20;
         padding-bottom: 90px;
     }
 
@@ -169,7 +169,7 @@
 
     .burger-menu_active {
         position: absolute;
-        z-index: 2;
+        z-index: 25;
         top: 23px;
         right: 17px;
         width: 28px;

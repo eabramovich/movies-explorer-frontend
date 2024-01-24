@@ -36,3 +36,29 @@
     opacity: 0.8;
     cursor: pointer;
 }
+
+@media screen and (max-width: 475px) {
+    .auth-content__header {
+        align-items: center;
+        height: 165px;
+        padding-top: 0px;
+    }
+    
+    .auth-content {
+       max-width: 260px;
+       padding: 30px;
+    }
+
+    .auth-content__login-register-text {
+        font-size: 12px;
+    }
+
+    .auth-content__login-link {
+        font-size: 12px;
+    }
+
+    .auth-content__login-register {
+        padding-top: 14px;
+    }
+    
+}

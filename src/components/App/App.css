@@ -55,6 +55,10 @@ html, .page, .page-wrapper {
     text-align: center;
 }
 
+.word-with-hyphen {
+    white-space: nowrap;
+}
+
 @media screen and (max-width: 1024px) {
     .section {
         padding-left: 50px;

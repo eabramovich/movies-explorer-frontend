@@ -16,6 +16,8 @@
 }
 
 .search-form__input:focus {
+    border-bottom: 1px solid #3456F3;
+    font-weight: 500;
     outline: none;
 }
 

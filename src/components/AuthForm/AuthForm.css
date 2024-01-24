@@ -75,6 +75,13 @@
     cursor: pointer;
 }
 
-.auth-form__button_type_login {
+@media screen and (max-width: 475px) {
+    .auth-form__button {
+        font-size: 12px;
+    }
 
+    .auth-form {
+        padding-top: 55px;
+        height: 467px;
+    }
 }
